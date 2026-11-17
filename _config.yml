@@ -10,6 +10,11 @@ description: "OTLET works with engineers, researchers, and students to make ethi
 url: "https://otlet.tech"
 baseurl: ""
 
+# Copy Markdown files without front matter unchanged instead of rendering them as
+# pages. GitHub Pages enables jekyll-optional-front-matter by default, which would
+# turn each report's Markdown companion into an extra page in the site layout.
+require_front_matter: true
+
 # Files that must not be copied into the built site
 exclude:
   - CLAUDE.md
