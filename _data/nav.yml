@@ -6,8 +6,10 @@
   url: /about/
 - title: Advocacy
   url: /advocacy/
-- title: Education
-  url: /education/
+# Education is hidden for the moment (user, 2026-11-17): uncomment to restore the tab
+# and the footer link. The page itself still builds at /education/.
+# - title: Education
+#   url: /education/
 - title: Lineage
   url: /lineage/
 - title: Contact
