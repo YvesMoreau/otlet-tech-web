@@ -7,4 +7,5 @@ menu: tabs
 # Advocacy items name people or organizations, so each goes live only on the
 # founder's sign-off. false: shown in local previews (jekyll serve), left out of
 # the production build (GitHub Pages builds with JEKYLL_ENV=production).
-publish_belarus: false
+publish_belarus: true
+publish_ga118: true

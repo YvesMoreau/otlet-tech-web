@@ -187,9 +187,19 @@ report: `index.html`, PDF, Markdown companion, `figures/`), with a `HANDOFF.md`.
 - `_config.yml` sets `require_front_matter: true`; without it, GitHub Pages' default
   `jekyll-optional-front-matter` plugin turns each `.md` companion into an extra page in
   the site layout.
-- Bundles and feedback to the pipeline are kept in `misc/`. The first bundle
-  (2026-11-17) is not deployed: feedback in `misc/otlet-reports-feedback-2026-11-17.md`
-  asks for a rebuild.
+- Bundles and feedback to the pipeline are kept in `misc/`. Deployed: the sixth bundle,
+  `misc/otlet-reports-site-2026-11-18-published.zip` (signed off 2026-11-18; both
+  `publish_*` switches true). To update a report, replace its directory with the new
+  bundle's, verify with the bundle's `SHA256SUMS`, and commit.
+- Zenodo (all four records published, linked to each other, custom licenses):
+
+  | Report | Report DOI (PDF) | Sources DOI |
+  |---|---|---|
+  | belarus-dna-database | 10.5281/zenodo.24322751 | 10.5281/zenodo.24322355 |
+  | ga118-genealogy | 10.5281/zenodo.24322804 | 10.5281/zenodo.24322419 |
+
+  A new edition of a report needs a new Zenodo version of its record, with the PDF
+  identical to the one on the site.
 
 ## Open questions
 - Home News Item, the advocacy index, and the About call to action: no content yet.
