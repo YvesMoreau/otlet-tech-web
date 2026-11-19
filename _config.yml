@@ -6,7 +6,8 @@ tagline: Ethics in Tech
 legal_name: "Otlet–La Fontaine Alliance"
 legal_status: in formation
 email: info@otlet.tech
-description: "OTLET works with engineers, researchers, and students to make ethical responsibility part of how technology is built — through education, accountability, and a European network."
+# Search results cut descriptions at about 160 characters: keep every description shorter.
+description: "OTLET works with engineers, researchers, and students to make ethical responsibility part of how technology is built, through education and accountability."
 url: "https://otlet.tech"
 baseurl: ""
 
