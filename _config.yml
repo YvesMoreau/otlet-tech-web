@@ -15,6 +15,13 @@ baseurl: ""
 # turn each report's Markdown companion into an extra page in the site layout.
 require_front_matter: true
 
+# jekyll-redirect-from: `redirect_from` in a page's front matter (Advocacy uses it for
+# /advocacy/reports/). sitemap.xml, built by GitHub Pages. Pages with `sitemap: false` (the drafts, beside
+# `noindex: true`) are left out; robots.txt points to it.
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
 # Files that must not be copied into the built site
 exclude:
   - CLAUDE.md

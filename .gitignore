@@ -2,24 +2,36 @@
 .vscode/
 claude-devcontainer.sh
 
-# assets/: track only files the web page uses (index.html, site.webmanifest)
+# assets/: track only files the web pages use
 assets/*
-!assets/Otlet_stacked.png
-!assets/Otlet_stacked.webp
 !assets/icons/
+# Layout (top-bar wordmark, sharing image) and Home (emblem, also on About)
+!assets/otlet-wordmark.webp
+!assets/otlet-emblem.webp
+!assets/og-image.jpg
+# Page images: Lineage (illustrations, credited on the page) and Home (video thumbnail)
+!assets/images/
+assets/images/*
+!assets/images/portrait-otlet.webp
+!assets/images/portrait-henri.webp
+!assets/images/portrait-leonie.webp
+!assets/images/otlet-at-desk.webp
+!assets/images/repertoire.webp
+!assets/images/video-rqHdQIuQNMo.webp
 # High-resolution emblem master (8192 px), not used by the page
 !assets/Otlet_emblem_high-res.png
 # Its generator's installed dependencies (tools/emblem/README.md)
 tools/emblem/node_modules/
 
 # Pages not yet public (remove a line to publish that page)
-home.html
-about.html
-lineage.html
-advocacy.html
 education.html
 contact.html
-reports.html
+
+# Not needed by GitHub Pages; kept on disk only (user, 2026-11-19). CLAUDE.md holds
+# internal notes; the Gemfile serves the local preview, GitHub Pages ignores it.
+CLAUDE.md
+Gemfile
+Gemfile.lock
 
 # Jekyll and Bundler output
 _site/

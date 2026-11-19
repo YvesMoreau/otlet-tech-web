@@ -1,71 +1,131 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OTLET · Own The Limits · Ethics in Tech</title>
-  <meta name="description" content="OTLET: Own The Limits. Ethics in Tech. Coming soon.">
-  <link rel="icon" href="favicon.ico" sizes="48x48">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#612387">
-  <style>
-    @font-face {
-      font-family: "Fira Sans";
-      font-style: normal;
-      font-weight: 500;
-      font-display: swap;
-      src: url("fonts/fira-sans-latin-500.woff2") format("woff2");
-    }
-    :root {
-      --purple-dark: #3A1556;
-      --purple: #612387;
-      --purple-mid: #8040B0;
-      --lavender: #CFBDF5;
-      --mist: #F1EBFC;
-      --manila-deep: #D9C48A;
-      --manila: #F2E2B0;
-      --manila-light: #FAF5E3;
-      --white: #FFFFFF;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1.5rem;
-      padding: 2rem 1rem;
-      background: var(--manila-light);
-      color: var(--purple);
-      font-family: "Fira Sans", system-ui, sans-serif;
-    }
-    img {
-      display: block;
-      width: auto;
-      height: auto;
-      max-width: 100%;
-      max-height: 65vh;
-    }
-    p {
-      margin: 0;
-      font-size: clamp(1.25rem, 3vw, 1.75rem);
-      font-weight: 500;
-      letter-spacing: 0.04em;
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <picture>
-      <source srcset="assets/Otlet_stacked.webp" type="image/webp">
-      <img src="assets/Otlet_stacked.png" width="1000" height="1391"
-           alt="OTLET — Own The Limits. Ethics in Tech.">
-    </picture>
-  </main>
-  <p>Coming soon</p>
-</body>
-</html>
+---
+layout: default
+permalink: /
+---
+<!-- Copy from misc/website_content.md (2026-10-31). .placeholder: still to be written;
+     .verify: facts to check before publication. -->
+  <section class="band band-light hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-text">
+        <p class="label">Ethics in Tech · Brussels · 2026</p>
+        <h1 id="hero-title">Technology must serve people, not exploit them.</h1>
+        <p class="lead">Those of us who build technology shape what it does to all of us. {{ site.title }} equips the tech community with the culture, stories, and tools to turn ethical responsibility into everyday practice. Through our advocacy, we make the cost of ethical failures real.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="{{ '/about/' | relative_url }}">What we do <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="{{ '/assets/otlet-emblem.webp' | relative_url }}" alt="" width="560" height="560" fetchpriority="high">
+      </figure>
+    </div>
+  </section>
+
+  <section class="band band-dark" aria-label="Featured">
+    <div class="wrap features">
+      {%- comment %} Names a company: only on the founder's sign-off (_data/options.yml). {% endcomment %}
+      {%- if site.data.options.publish_belarus or jekyll.environment != "production" %}
+      <article class="feature">
+        <p class="label">Report · 2026-11</p>
+        <h2><a href="{{ '/advocacy/reports/belarus-dna-database/' | relative_url }}">Belarus’s National DNA Database: Who Built It, and Who Still Supplies It</a></h2>
+        <p>Belarus is taking DNA from political prisoners and exiles’ relatives before any law allows it, on Thermo Fisher analyzers.</p>
+        <p class="feature-more"><a href="{{ '/advocacy/reports/belarus-dna-database/' | relative_url }}" aria-hidden="true" tabindex="-1">Read the report <span>→</span></a></p>
+      </article>
+      {%- endif %}
+      {%- comment %} Names a state body and a company: only on the founder's sign-off (_data/options.yml). {% endcomment %}
+      {%- if site.data.options.publish_ga118 or jekyll.environment != "production" %}
+      <article class="feature">
+        <p class="label">Report · 2026-11</p>
+        <h2><a href="{{ '/advocacy/reports/ga118-genealogy/' | relative_url }}">Genealogy of a Genetic Surveillance Platform: The GA118 Genetic Analyzer</a></h2>
+        <p>A DNA sequencer developed within the research apparatus of China’s Ministry of Public Security, sold under five names in two countries, and demonstrated in Minsk in 2016.</p>
+        <p class="feature-more"><a href="{{ '/advocacy/reports/ga118-genealogy/' | relative_url }}" aria-hidden="true" tabindex="-1">Read the report <span>→</span></a></p>
+      </article>
+      {%- endif %}
+      <div class="feature-video">
+        <!-- Facade: nothing loads from YouTube until the visitor clicks. Without
+             JavaScript the link opens the video on YouTube. The speaker's name stays
+             in the video only, not in the page copy. -->
+        <a class="video-facade" href="https://www.youtube.com/watch?v=rqHdQIuQNMo" data-video="rqHdQIuQNMo">
+          <img src="{{ '/assets/images/video-rqHdQIuQNMo.webp' | relative_url }}" alt="" width="960" height="540" loading="lazy">
+          <span class="video-bar">
+            <svg class="video-play" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="M19 15 L35 24 L19 33 Z"/></svg>
+            <span class="video-text">
+              <span class="video-title"><span class="visually-hidden">Play video: </span>Artificial Intelligence: Utopia or Brave New World?</span>
+              <span class="video-caption">Why the future of technology depends on the choices of the people who build it.</span>
+              <span class="video-meta">TEDxKU Leuven · Plays from YouTube</span>
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-white" aria-labelledby="advocacy-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label">Index</p>
+        <h2 id="advocacy-title">Advocacy</h2>
+        <p>Unethical technology often starts in research and then gets developed and sold by companies. Misuse becomes possible only if that complex technological chain disregards ethics and accountability. We push back where norms are set: companies whose products are misused, journals, and publishers. We work with journalists to disseminate our findings or comment on their investigations.</p>
+      </div>
+      <!-- The latest advocacy items: the published reports, each gated by its switch. -->
+      <ul class="rows">
+        {%- if site.data.options.publish_belarus or jekyll.environment != "production" %}
+        <li><a href="{{ '/advocacy/reports/belarus-dna-database/' | relative_url }}">
+          <p class="label">2026-11</p>
+          <h3>Belarus’s National DNA Database: Who Built It, and Who Still Supplies It</h3>
+          <p>Who supplied the technology for the database, and what exposure remains for Thermo Fisher, Promega, and QIAGEN.</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a></li>
+        {%- endif %}
+        {%- if site.data.options.publish_ga118 or jekyll.environment != "production" %}
+        <li><a href="{{ '/advocacy/reports/ga118-genealogy/' | relative_url }}">
+          <p class="label">2026-11</p>
+          <h3>Genealogy of a Genetic Surveillance Platform: The GA118 Genetic Analyzer</h3>
+          <p>How one sequencer design passed from China’s Ministry of Public Security to distributors in Russia, under five names.</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a></li>
+        {%- endif %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="band band-dark" aria-labelledby="pillars-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label">Pillars</p>
+        <h2 id="pillars-title">How we work</h2>
+      </div>
+      <div class="limits limits-2">
+        <div class="limit"><span class="num" aria-hidden="true">01</span><h3>Accountability</h3><p>We document unethical research and reckless uses of technology, and work with journals, publishers, and companies to correct them.</p></div>
+        <div class="limit"><span class="num" aria-hidden="true">02</span><h3>Culture</h3><p>We tell the stories that change what the tech community sees as normal — in videos, talks, and a growing international network.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-lavender cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <div class="cta-text">
+        <p class="label">Three questions</p>
+        <h2 id="cta-title">What should we do with technology? Should we do this? Do I have to do this?</h2>
+        <p>Three questions every engineer, researcher, and student can ask. {{ site.title }} exists to make them easier to ask — and harder to ignore.</p>
+      </div>
+      <!-- Contact page hidden for the moment (user, 2026-11-18): opens the mail client. -->
+      <a class="btn btn-primary" href="mailto:{{ site.email }}">Get in touch <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+<script>
+  // Replace the video facade with the YouTube player on click.
+  document.querySelectorAll('.video-facade').forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      var frame = document.createElement('iframe');
+      frame.src = 'https://www.youtube-nocookie.com/embed/' + link.dataset.video + '?autoplay=1';
+      frame.title = link.querySelector('.video-title').textContent.replace('Play video: ', '');
+      frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      frame.referrerPolicy = 'strict-origin-when-cross-origin';
+      frame.allowFullscreen = true;
+      link.replaceWith(frame);
+      frame.focus();
+    });
+  });
+</script>

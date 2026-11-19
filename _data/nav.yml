@@ -1,16 +1,21 @@
-# Main menu and footer links, in order. "Home" is /home/ while index.html is still the
-# live "Coming soon" page; point it at / when the home page replaces index.html.
+# Main menu and footer links, in order (user, 2026-11-19): the work first, then
+# About and then Lineage, which About introduces.
 - title: Home
-  url: /home/
-- title: About
-  url: /about/
+  url: /
 - title: Advocacy
   url: /advocacy/
+- title: News
+  url: /news/
+- title: About
+  url: /about/
+- title: Lineage
+  url: /lineage/
 # Education is hidden for the moment (user, 2026-11-17): uncomment to restore the tab
 # and the footer link. The page itself still builds at /education/.
 # - title: Education
 #   url: /education/
-- title: Lineage
-  url: /lineage/
-- title: Contact
-  url: /contact/
+# Contact is hidden for the moment (user, 2026-11-18): uncomment to restore the tab
+# and the footer link. The page itself still builds at /contact/; buttons that should
+# open the visitor's mail client meanwhile use mailto:{{ site.email }}.
+# - title: Contact
+#   url: /contact/

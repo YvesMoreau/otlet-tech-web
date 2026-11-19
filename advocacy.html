@@ -1,0 +1,103 @@
+---
+layout: default
+title: Advocacy
+permalink: /advocacy/
+redirect_from: /advocacy/reports/
+---
+<!-- Copy from misc/website_content.md (2026-10-31). .placeholder: still to be written;
+     .verify: facts to check before publication. Every advocacy item needs the founder's
+     sign-off. -->
+  <section class="band band-light banner" aria-labelledby="page-title">
+    <div class="wrap">
+      <nav class="crumbs label" aria-label="Breadcrumb"><ol><li><a href="{{ '/' | relative_url }}">Home</a></li><li aria-hidden="true">/</li><li aria-current="page">Advocacy</li></ol></nav>
+      <h1 id="page-title">Accountability where technology begins</h1>
+      <p class="lead">Abusive technologies often start as research and are then developed and sold by companies. When research violates ethical standards, journals, publishers, and universities have the power — and the duty — to correct the record, up to retraction. When companies supply technology used for abuse, they must answer for where it ends up. We document both, from published sources, and press for correction.</p>
+    </div>
+  </section>
+  <section class="band band-dark" aria-labelledby="approach-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label">Approach</p>
+        <h2 id="approach-title">How we work</h2>
+      </div>
+      <div class="limits limits-2">
+        <div class="limit"><span class="num" aria-hidden="true">01</span><h3>Document</h3><p>We examine published research and commercial practices against established ethical standards: consent, harm, and the rights of the people involved. Every claim is sourced.</p></div>
+        <div class="limit"><span class="num" aria-hidden="true">02</span><h3>Engage</h3><p>We bring cases to the editors, publishers, institutions, and companies responsible, and give them the chance to respond and act.</p></div>
+      </div>
+    </div>
+  </section>
+  {%- comment %} Hidden for the moment (user, 2026-11-18): remove the comment tags to
+  restore. Not in the built page. {% endcomment %}
+  {%- comment %}
+  <section class="band band-light" aria-labelledby="record-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label">The work {{ site.title }} builds on</p>
+        <h2 id="record-title">What this work has achieved so far</h2>
+        <p>This work predates {{ site.title }}.</p>
+      </div>
+      <ul class="record">
+        <li><span class="verify">About <strong>50 retractions</strong> of articles based on DNA or facial data from vulnerable populations collected without valid consent.</span></li>
+        <li><span class="verify"><strong>New ethics requirements</strong> for human-subject research across IEEE’s journals, and new <strong>Nature Portfolio</strong> guidelines on research involving vulnerable groups.</span></li>
+        <li><span class="verify">A major supplier ended sales of human identification products to police in Xinjiang and Tibet.</span></li>
+        <li><span class="verify">Coverage in <i>The New York Times</i>, <i>The Guardian</i>, the <i>BBC</i>, <i>Nature</i>, and <i>Science</i>.</span></li>
+      </ul>
+    </div>
+  </section>
+  {% endcomment %}
+  <section class="band band-white" aria-labelledby="list-title">
+    <div class="wrap">
+      <!-- Merged from the former Reports page (/advocacy/reports/, user 2026-11-19). -->
+      <div class="section-head">
+        <p class="label">Index</p>
+        <h2 id="list-title">Reports</h2>
+        <p>Each report traces a surveillance technology to the institutions that built it and the companies that supply it, from published documents. Every claim is graded by confidence, from verified to unverified, and a copy of every cited source, or its record, is archived on Zenodo. Each report is published as a web page, a PDF, and a Markdown file.</p>
+      </div>
+      <!-- The published reports, each gated by its switch (_data/options.yml). -->
+      <ul class="rows">
+        {%- if site.data.options.publish_belarus or jekyll.environment != "production" %}
+        <li><a href="{{ '/advocacy/reports/belarus-dna-database/' | relative_url }}">
+          <p class="label">Belarus · 2026-11</p>
+          <h3>Belarus’s National DNA Database: Who Built It, and Who Still Supplies It</h3>
+          <p>Who supplied the technology for the database, and what exposure remains for Thermo Fisher, Promega, and QIAGEN.</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a></li>
+        {%- endif %}
+        {%- if site.data.options.publish_ga118 or jekyll.environment != "production" %}
+        <li><a href="{{ '/advocacy/reports/ga118-genealogy/' | relative_url }}">
+          <p class="label">Belarus and China · 2026-11</p>
+          <h3>Genealogy of a Genetic Surveillance Platform: The GA118 Genetic Analyzer</h3>
+          <p>How one sequencer design passed from China’s Ministry of Public Security to distributors in Russia, under five names.</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a></li>
+        {%- endif %}
+      </ul>
+    </div>
+  </section>
+  <!-- Stands in for "Report a case" while that block and the Contact page are hidden
+       (user, 2026-11-18). -->
+  <section class="band band-lavender cta" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="cta-text">
+        <p class="label">Contact</p>
+        <h2 id="contact-title">Questions about a report, or information to add?</h2>
+        <p>Write to {{ site.title }} at {{ site.email }}.</p>
+      </div>
+      <a class="btn btn-primary" href="mailto:{{ site.email }}">Email {{ site.title }} <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+  {%- comment %} Hidden for the moment (user, 2026-11-18): remove the comment tags to
+  restore. Not in the built page. {% endcomment %}
+  {%- comment %}
+  <section class="band band-lavender cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <div class="cta-text">
+        <p class="label">Report a case</p>
+        <h2 id="cta-title">Have you come across research or technology that crosses an ethical line?</h2>
+        <p>We read every message. Confidentiality is respected.</p>
+      </div>
+      <!-- Contact page hidden for the moment (user, 2026-11-18): opens the mail client. -->
+      <a class="btn btn-primary" href="mailto:{{ site.email }}">Contact {{ site.title }} <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+  {% endcomment %}

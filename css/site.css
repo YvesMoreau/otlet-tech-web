@@ -239,6 +239,7 @@ h3 { color: var(--purple-dark); font-size: 1.25rem; line-height: 1.2; }
 
 /* ---------- Limits strip (dark band) ---------- */
 .limits { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.limits-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .limit {
   display: grid;
   align-content: start;
@@ -486,6 +487,9 @@ img.portrait { display: block; height: auto; }   /* round portrait with transpar
 }
 .feature .label { margin-bottom: -0.25rem; color: var(--purple-muted); }
 .feature h2 { color: var(--purple); font-size: 1.4rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--purple); }
+.feature h2 a { color: inherit; text-decoration: none; }
+.feature h2 a:hover { color: var(--purple-mid); text-decoration: underline; }
+.feature-more a { font-weight: 500; }
 .feature-video { position: relative; border: var(--rule); background: var(--purple-dark); min-width: 0; }
 .feature-video::before { content: ""; display: block; padding-top: 56.25%; }   /* at least 16:9; taller if the row is */
 .feature-video iframe,
@@ -524,3 +528,20 @@ img.portrait { display: block; height: auto; }   /* round portrait with transpar
 /* Illustrations: comic-strip panel frame from the house style (section 5) */
 .plate { margin: 0; padding: 10px; max-width: var(--measure); background: var(--manila-light); border: var(--rule); }
 .plate img { display: block; width: 100%; height: auto; border: 3px solid var(--purple-dark); }
+
+/* About, "Our logo": the emblem as a drop cap, three lines tall, unframed (house style,
+   section 5). shape-outside lets the text follow the disk's curve. */
+.emblem-drop { float: left; width: 4.4em; height: auto; margin: 0.2em 0.7em 0 0;
+  shape-outside: circle(50%); shape-margin: 0.4em; }
+
+/* News: date · title · outlet. The title takes the widest column; on narrow screens
+   the three stack, as in .rows. */
+.rows-news a { grid-template-columns: 7rem minmax(0, 2fr) minmax(0, 1fr) 2rem; }
+@media (max-width: 56rem) {
+  .rows-news a { grid-template-columns: minmax(0, 1fr) 2rem; }
+}
+/* The outlet's name in Fira Sans 500: Fira Code is self-hosted in 400 only. */
+.rows-news .outlet { font-family: var(--font-body); font-weight: 500; color: var(--purple-dark); }
+/* Lineage: credit line for the illustrations, as a caption (house style, section 5). */
+.image-credits { margin-top: 2.5rem; padding-top: 1rem; border-top: var(--rule); max-width: var(--measure); line-height: 1.6; }
+.image-credits a { color: inherit; }
