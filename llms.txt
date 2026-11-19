@@ -1,0 +1,22 @@
+# OTLET
+
+> OTLET (Own The Limits · Ethics in Tech) is an independent nonprofit in formation, based in Brussels, working for a stronger ethical culture in technology. It publishes evidential reports that trace surveillance technologies to the institutions that built them and the companies that supply them, from published documents. Every claim in a report is graded by confidence, from verified to unverified, and a copy of every cited source, or its record, is archived on Zenodo.
+
+Each report is available as a web page, a Markdown file (best for machine reading), and a PDF. The PDF is the version of record, with a DOI. Reports are published under CC BY 4.0, except the institutional logo and third-party material (quotations and photographs).
+
+## Reports
+
+- [Belarus's National DNA Database: Who Built It, and Who Still Supplies It](https://otlet.tech/advocacy/reports/belarus-dna-database/belarus-dna-database.md): Belarus is filling a national DNA database from political prisoners and the relatives of exiles; who supplied the technology, and what exposure remains for Thermo Fisher, Promega, and QIAGEN. November 17, 2026. Web page: https://otlet.tech/advocacy/reports/belarus-dna-database/ · PDF: https://otlet.tech/advocacy/reports/belarus-dna-database/belarus-dna-database.pdf · Report DOI: https://doi.org/10.5281/zenodo.24322751 · Sources DOI: https://doi.org/10.5281/zenodo.24322355
+- [Genealogy of a Genetic Surveillance Platform: The GA118 Genetic Analyzer](https://otlet.tech/advocacy/reports/ga118-genealogy/ga118-genealogy.md): a DNA sequencer developed within the research apparatus of China's Ministry of Public Security, engineered to match Applied Biosystems analyzers, and sold under five names in two countries. November 17, 2026. Web page: https://otlet.tech/advocacy/reports/ga118-genealogy/ · PDF: https://otlet.tech/advocacy/reports/ga118-genealogy/ga118-genealogy.pdf · Report DOI: https://doi.org/10.5281/zenodo.24322804 · Sources DOI: https://doi.org/10.5281/zenodo.24322419
+
+## About
+
+- [Advocacy](https://otlet.tech/advocacy/): how OTLET works, and the index of reports
+- [About](https://otlet.tech/about/): what OTLET does, its independence, and how it uses AI
+- [Lineage](https://otlet.tech/lineage/): Paul Otlet, Henri La Fontaine, and Léonie La Fontaine
+
+## Optional
+
+- [News](https://otlet.tech/news/): press coverage of the work OTLET builds on
+- [Sitemap](https://otlet.tech/sitemap.xml)
+- Contact: info@otlet.tech
